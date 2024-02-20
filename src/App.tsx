@@ -1,19 +1,21 @@
 import NavBar from "./component/navbar";
+import NftCard from "./component/nft-card";
+import { nftList } from "./data";
 
 function App() {
 	return (
 		<div className="container py-6 min-h-screen">
 			<NavBar />
 
-			<main className="pt-32 grid grid-cols-2">
-				<div className="space-y-10 border py-5">
-					<h1 className="text-[4.5rem] tracking-wide leading-none">
+			<main className="pt-32 grid lg:grid-cols-2 gap-32">
+				<div className="space-y-10 border py-5 flex flex-col items-center lg:items-start">
+					<h1 className="text-[4.5rem] tracking-wide leading-none max-lg:text-center">
 						Collect your <br /> favorite avatar.
 					</h1>
-					<p className="text-lg text-[#b2b5bb] tracking-wide">
-						With collecta, you can get more than +1m avatar, From 120k visual artist easily!
+					<p className="text-xl text-[#b2b5bb] tracking-wide max-lg:text-center">
+						With collecta, you can get more than +1m avatar, <br /> From 120k visual artist easily!
 					</p>
-					<div className="relative bg-[#f4f5f6] p-5 w-fit rounded-full flex items-center gap-x-4">
+					<div className="relative bg-[#f4f5f6] py-3 px-5 w-fit rounded-full flex items-center gap-x-4">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 							<path
 								d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"
@@ -34,10 +36,16 @@ function App() {
 							placeholder="Enter your email adrdres"
 							className="placeholder:text-[#b6b6c6] bg-transparent focus-visible::border-none w-60 outline-none"
 						/>
-						<button type="button" className="py-4 px-8 bg-gray-900 text-white rounded-full">
+						<button type="button" className="text-sm py-4 px-8 bg-gray-900 hover:bg-gray-700 text-white rounded-full">
 							Submit
 						</button>
 					</div>
+				</div>
+
+				<div className="flex justify-center relative">
+					{nftList.map((nft) => (
+						<NftCard key={nft.id} nftInfo={nft} />
+					))}
 				</div>
 			</main>
 		</div>

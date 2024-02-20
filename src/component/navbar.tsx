@@ -7,7 +7,7 @@ export default function NavBar() {
 				<h1 className="text-xl">Collecta</h1>
 			</div>
 
-			<ul className="text-gray-400 flex items-center gap-14 [&>li:first-of-type]:text-gray-800 ">
+			<ul className="text-gray-400 lg:flex items-center gap-14 [&>li:first-of-type]:text-gray-800 hidden">
 				<li className="relative before:content-[''] before:absolute before:-bottom-1 before:w-4 before:h-1 before:bg-gray-800 before:right-1/2 before:translate-x-1/2 before:rounded-full">
 					<a href="#">Home</a>
 				</li>
@@ -18,7 +18,7 @@ export default function NavBar() {
 					<a href="#">Collection</a>
 				</li>
 			</ul>
-			<div className="border-2 border-[#e3e3e3] rounded-full p-3">
+			<div className="border-2 border-[#e3e3e3] rounded-full p-3 max-lg:hidden">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 					<path d="M17.5 17.5L22 22" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 					<path
