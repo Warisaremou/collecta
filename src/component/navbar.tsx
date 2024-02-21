@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import MobileNav from "./mobile-nav";
 
 export default function NavBar() {
 	return (
@@ -29,6 +30,8 @@ export default function NavBar() {
 					/>
 				</svg>
 			</div>
+
+			<MobileNav />
 		</motion.div>
 	);
 }

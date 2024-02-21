@@ -4,7 +4,7 @@ import { nftList } from "./data";
 
 function App() {
 	return (
-		<div className="container py-6 min-h-screen">
+		<div className="container py-6 min-h-screen overflow-hidden">
 			<NavBar />
 
 			<main className="pt-20 lg:pt-32 grid lg:grid-cols-2 gap-20 xl:gap-32 w-full">
