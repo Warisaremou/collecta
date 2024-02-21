@@ -1,6 +1,7 @@
 import { NftInterface } from "./types";
 import nft1 from "./assets/images/nft-1.png";
 import nft2 from "./assets/images/nft-2.jpg";
+import avatar from "./assets/images/avatar.jpg";
 
 export const nftList = [
 	{
@@ -10,7 +11,7 @@ export const nftList = [
 		date: "24 Feb",
 		time: "2:10 AM",
 		image: nft1,
-		artistAvatar: "avatar.jpg",
+		artistAvatar: avatar,
 	},
 	{
 		id: 2,
@@ -19,6 +20,6 @@ export const nftList = [
 		date: "18 Jan",
 		time: "11:30 PM",
 		image: nft2,
-		artistAvatar: "avatar.jpg",
+		artistAvatar: avatar,
 	},
 ] satisfies NftInterface[];
