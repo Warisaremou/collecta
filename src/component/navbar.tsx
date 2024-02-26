@@ -40,7 +40,7 @@ export default function NavBar() {
 				<h1 className="text-2xl">Collecta</h1>
 			</div>
 
-			<ul className="text-gray-400 md:flex items-center gap-14 [&>li:first-of-type]:text-gray-800 hidden">
+			<ul className="text-gray-400 lg:flex items-center gap-14 [&>li:first-of-type]:text-gray-800 hidden">
 				<motion.li variants={link} className="nav-link">
 					<a href="#" className="">
 						Home
