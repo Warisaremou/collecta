@@ -35,7 +35,7 @@ function App() {
 						</div>
 						<input
 							type="text"
-							placeholder="Enter your email adrdres"
+							placeholder="Enter your email address"
 							className="text-sm md:text-base text-gray-600 placeholder:text-[#b6b6c6] bg-transparent focus-visible::border-none w-full outline-none"
 						/>
 						<button
