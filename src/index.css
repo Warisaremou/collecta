@@ -14,3 +14,12 @@
 body {
 	@apply text-gray-900 bg-[#fcfcfc] font-fontHeading;
 }
+
+.nav-link:nth-child(1) {
+	@apply relative before:content-[''] before:absolute before:-bottom-1 before:w-4 before:h-1 before:bg-gray-800 before:right-1/2 before:translate-x-1/2 before:rounded-full;
+}
+
+.nav-link:nth-child(2),
+.nav-link:nth-child(3) {
+	@apply relative before:content-[''] before:absolute before:-bottom-1 before:w-0 hover:before:w-4 before:delay-100 before:duration-150 before:transition-all before:ease-linear before:h-1 before:bg-gray-800 before:right-1/2 before:translate-x-1/2 before:rounded-full;
+}
