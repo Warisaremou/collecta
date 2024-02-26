@@ -23,3 +23,15 @@ body {
 .nav-link:nth-child(3) {
 	@apply relative before:content-[''] before:absolute before:-bottom-1 before:w-0 hover:before:w-4 before:delay-100 before:duration-150 before:transition-all before:ease-linear before:h-1 before:bg-gray-800 before:right-1/2 before:translate-x-1/2 before:rounded-full;
 }
+
+.hamburger:nth-child(1) {
+	@apply h-[2px] w-6 bg-gray-900;
+}
+
+.hamburger:nth-child(2) {
+	@apply h-[2px] w-6 bg-gray-900;
+}
+
+/* .hamburger {
+	@apply h-10 w-10 flex items-center justify-center cursor-pointer p-4 bg-gray-400/50 outline-none transition-all duration-200 ease-out absolute before:content-[''] before:h-[2px] before:w-7 before:absolute before:bg-gray-900 before:translate-y-2 after:content-[''] after:absolute after:h-[2px] after:w-7 after:bg-gray-900 after:-translate-y-2 will-change-transform;
+} */
