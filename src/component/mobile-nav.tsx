@@ -49,7 +49,6 @@ export default function MobileNav() {
 							: "before:-translate-y-1 after:translate-y-1"
 					}`}
 				></div>
-				{/* <div className="hamburger"></div> */}
 			</div>
 
 			<motion.div
